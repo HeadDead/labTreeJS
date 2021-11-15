@@ -1,0 +1,55 @@
+body{
+    background-image: url("images/1.jpg");
+}
+label{
+    color: #0999ff;
+}
+.formSearch{
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+a{
+    color: #0999ff;
+}
+
+caption{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.table{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 20%;
+    left: 27%;
+}
+.delete{
+    color: black;
+}
+table{
+    border-collapse: collapse;
+    border: 4px solid black;
+}
+tr, td, th{
+    border: 2px solid black;
+    color: #0999ff;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}

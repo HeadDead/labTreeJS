@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Добавление сотрудника</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<form>
+    <fieldset class="addEmployee">
+        <legend>Добавление нового сотрудника:</legend>
+
+        <label>ФИО:</label><br>
+        <input type="text" name="userName" id="userName" placeholder="Например: Иванов Иван Иванович" size="40"
+               required/><br>
+
+        <label for="userJob">Место работы:</label><br>
+        <input type="text" name="userJob" id="userJob" placeholder="Например: ООО Yandex" size="40" required/><br>
+
+        <label for="UserPost">Должность:</label><br>
+        <input type="text" name="userPost" id="userPost" placeholder="Например: Разработчик Back-End" size="40"
+               required><br>
+
+        <label for="dateAccept">Дата трудоустройства</label><br>
+        <input type="date" name="dataAccept" id="dateAccept" required><br>
+
+        <br>
+        <button id="add" formaction="MainWEB.html" formmethod="post">Добавить</button>
+    </fieldset>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    background-image: url("images/2.jpg");
+}
+
+label {
+    color: #0999ff
+}
+
+legend {
+    color: #0999ff;
+    text-align: center;
+}
+
+.addEmployee {
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+

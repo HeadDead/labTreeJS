@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Main WEB</title>
+    <link href="stylessMain.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+<fieldset class="formSearch">
+    <label>Введите номер сотрудника:</label><br>
+    <div>
+        <form name="searchNumber">
+            <input id="inputNumber" type="text" min="1" placeholder="Например: 123">
+            <button>Поиск</button>
+        </form>
+    </div>
+    <div>
+        <label>Введите Имя сотрудника:</label><br>
+        <form name="findWorkerLastName" action="StageFour.html">
+            <input type="text" id="pName" size="40" placeholder="Например: Иван Иванович">
+            <button onclick="outputLastNameOnTwoList()">Поиск</button>
+        </form>
+    </div>
+    <br>
+    <button>Информацию обо всех сотрудниках</button>
+
+    <div class="addEmployee">
+        <br><a href="AddEmployee.html">Добавить сотрудника</a>
+    </div>
+</fieldset>
+
+<form id="table" method="post">
+    <fieldset class="table">
+        <table id="table" border="1">
+            <caption>Таблица</caption>
+            <tr>
+                <th></th>
+                <th>Номер сотрудника</th>
+                <th>Имя сотрудника</th>
+                <th>Должность</th>
+                <th>Дата трудоустройства</th>
+                <th>Департамент</th>
+                <th>Удалить</th>
+            </tr>
+            <tr id="del">
+                <td><input type="checkbox"></td>
+                <td><a href="">1</a></td>
+                <td>Тихонов Антон Юрьевич</td>
+                <td>Разработчик Back-End</td>
+                <td>01.03.19</td>
+                <td>ООО Haulmont</td>
+                <td><a href="#" onclick="deleteRow()">Удалить</a></td>
+            </tr>
+            <tr id="del2">
+                <td><input type="checkbox"></td>
+                <td><a href="">2</a></td>
+                <td>Иванов Иван Иванович</td>
+                <td>Веб дизайнер</td>
+                <td>03.22.19</td>
+                <td>ООО Haulmont</td>
+                <td><a href="#" onclick="deleteRow2()">Удалить</a></td>
+            </tr>
+            <tr id="del3">
+                <td><input type="checkbox"></td>
+                <td><a href="">3</a></td>
+                <td>Стефанов Николоай Николаевич</td>
+                <td>Разработчик Front-End</td>
+                <td>02.02.19</td>
+                <td>ООО Haulmont</td>
+                <td><a href="#" onclick="deleteRow3()">Удалить</a></td>
+            </tr>
+            <tr id="del4">
+                <td><input type="checkbox"></td>
+                <td><a href="">4</a></td>
+                <td>Попов Артем Максимович</td>
+                <td>Разработчик Back-End</td>
+                <td>02.02.19</td>
+                <td>ООО Haulmont</td>
+                <td><a href="#id" onclick="deleteRow4()">Удалить</a></td>
+            </tr>
+            <tr id="del5">
+                <td><input type="checkbox"></td>
+                <td><a href="">5</a></td>
+                <td>Усачев Анатолий Юрьевич</td>
+                <td>Разработчик Front-End</td>
+                <td>03.22.19</td>
+                <td>ООО Haulmont</td>
+                <td><a href="#id" onclick="deleteRow5()">Удалить</a></td>
+            </tr>
+            <tr id="del6">
+                <td><input type="checkbox"></td>
+                <td><a href="">6</a></td>
+                <td>Кудашов Павел Николаевич</td>
+                <td>WEB-дизайнер</td>
+                <td>01.23.19</td>
+                <td>ООО Yandex</td>
+                <td><a href="#id" onclick="deleteRow6()">Удалить</a></td>
+            </tr>
+            <tr id="del7">
+                <td><input type="checkbox"></td>
+                <td><a href="">7</a></td>
+                <td>Борцов Дмитрий Сергеевич</td>
+                <td>HR</td>
+                <td>10.10.19</td>
+                <td>ООО Yandex</td>
+                <td><a href="#" onclick="deleteRow7()">Удалить</a></td>
+            </tr>
+            <tr id="del8">
+                <td><input type="checkbox"></td>
+                <td><a href="">8</a></td>
+                <td>Ефимов Дмитрий Александрович</td>
+                <td>HR</td>
+                <td>10.10.19</td>
+                <td>ООО Haulmont</td>
+                <td><a href="#id" onclick="deleteRow8()">Удалить</a></td>
+            </tr>
+            <tr id="del9">
+                <td><input type="checkbox"></td>
+                <td><a href="">9</a></td>
+                <td>Константинов Станислав Сергеевич</td>
+                <td>WEB-дизайнер</td>
+                <td>10.10.19</td>
+                <td>ООО Haulmont</td>
+                <td><a href="#id" onclick="deleteRow9()">Удалить</a></td>
+            </tr>
+            <tr id="del10">
+                <td><input type="checkbox"></td>
+                <td><a href="">10</a></td>
+                <td>Сабылин Константин Сергеевич</td>
+                <td>HR</td>
+                <td>10.10.20</td>
+                <td>ООО Yandex</td>
+                <td>
+                    <a href="#id" onclick="deleteRow10()">Удалить</a>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+<script src="Main.js"></script>
+</body>
+</html>
